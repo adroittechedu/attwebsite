@@ -62,27 +62,20 @@ body {
         border: 2px solid #0682fe;
     }
 }
-
-.video_main {
-    margin: 3%;
-    /* border: 10px solid  #f40303; */
-    /* border-radius: 10px; */
-    overflow: hidden;
-    /* animation: pulseBorder 2s infinite; */
-    position: relative; /* Add relative positioning */
-    padding-bottom: 56.25%; /* Maintain aspect ratio for responsive video */
+.responsive-iframe-container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* Aspect ratio (16:9) */
+  margin: 10px 0; /* Optional: Adjust the margin as needed */
 }
 
-.video_main video {
-    margin-left: 10%;
-    width: 80%; /* Make the video fill the container */
-    height: 79%; /* Make the video fill the container */
-    position: absolute; /* Position the video within the container */
-    top: 0; /* Align video to the top of the container */
-    left: 0; /* Align video to the left of the container */
-    margin-bottom: 0%;
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 79%;
 }
-
 
 @keyframes pulseButton {
     0% {
